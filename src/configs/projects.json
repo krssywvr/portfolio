@@ -1,0 +1,107 @@
+[{
+        "name": "Trends @ Pendo",
+        "desc": "Build reports to better visualize your Pendo data. Compare Segments, Features and Pages across various timeframes. (Sunset)",
+        "techStack": [
+            "JavaScript",
+            "AngularJS",
+            "HighCharts",
+            "Jasmine/Karma"
+        ],
+        "img": "../assets/trends.jpeg",
+        "category": "work",
+        "key": "work-trends"
+    },
+    {
+        "name": "Visual Design Studio @ Pendo",
+        "desc": "WYSIWYG for building and editing in-app-messaging A.K.A Pendo Guides. The designer displays on top of the customer's application so they can preview the Guide directly on their app as they build.",
+        "techStack": [
+            "JavaScript",
+            "Vue",
+            "Vuex",
+            "Jest",
+            "Cypress"
+        ],
+        "img": "",
+        "category": "work",
+        "key": "work-vds",
+        "article": "https://www.pendo.io/pendo-blog/introducing-pendo-visual-design-studio-bringing-power-app-guides-everyone/"
+    },
+    {
+        "name": "Webhooks @ Pendo",
+        "desc": "Implemented the interface that allows Pendo Admins to push out real-time notifications, based on Pendo events, to other services",
+        "techStack": [
+            "JavaScript",
+            "Vue",
+            "Vuex",
+            "Jest",
+            "Cypress"
+        ],
+        "img": "",
+        "category": "work",
+        "key": "work-webhooks",
+        "article": "https://www.pendo.io/pendo-blog/using-webhooks-to-drive-product-led-workflows-across-your-organization/"
+    },
+    {
+        "name": "Salesforce Integration Vue Migration @ Pendo",
+        "desc": "Set-up full end-to-end testing with Cypress for Pendo's existing Salesforce Integration as a way to leviate an increase in customer-found bugs. Later completely migrated and redesigned the existing integration, which was written with AngularJS, to use Vue/Vuex. (Hackathon winner 2020)",
+        "techStack": [
+            "JavaScript",
+            "Vue",
+            "Vuex",
+            "AngularJS",
+            "Cypress"
+        ],
+        "img": "",
+        "category": "work",
+        "key": "work-sfdc"
+    },
+    {
+        "name": "Hubspot Integration @ Pendo",
+        "desc": "Allow Pendo Admins to pull Hubspot data into Pendo, which can then be utilized for segmentation throughout the app.",
+        "techStack": [
+            "JavaScript",
+            "Vue",
+            "Vuex",
+            "Jest",
+            "Cypress"
+        ],
+        "img": "",
+        "category": "work",
+        "key": "work-hubspot"
+    },
+    {
+        "name": "Resource Center Chat Extensions @ Pendo",
+        "desc": "blah blah blah",
+        "techStack": [
+            "JavaScript",
+            "AngularJS"
+        ],
+        "img": "",
+        "category": "work",
+        "key": "work-rc-chats"
+    },
+    {
+        "name": "Chain Reactions Blog",
+        "desc": "A blog and blogging platform. Remember when Chain Restraunts ruled the world? Join my friends and I as we revist some of our old favorites, sometimes tasting sweet nostalgia, other times realizing why chains took a hit.",
+        "techStack": [
+            "JavaScript",
+            "React",
+            "TypeScript",
+            "NodeJS"
+        ],
+        "img": "",
+        "category": "fun",
+        "key": "fun-chain-reactions"
+    },
+    {
+        "name": "Twitter Clone",
+        "desc": "A Twitter copy as a way to re-learn React",
+        "techStack": [
+            "JavaScript",
+            "React"
+        ],
+        "img": "",
+        "category": "fun",
+        "key": "fun-twitter"
+    }
+]
