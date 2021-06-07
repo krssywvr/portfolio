@@ -72,7 +72,7 @@
         "article": "https://www.pendo.io/integrations/hubspot/"
     },
     {
-        "name": "Resource Center Chat Extensions @ Pendo",
+        "name": "Resource Center Native Chat Extensions @ Pendo",
         "desc": "Enable 3rd-party chat providers to be installed and work seamlessly as a part of Pendo's Resource Center.",
         "techStack": [
             "JavaScript",
@@ -92,7 +92,9 @@
         ],
         "img": "amazon.png",
         "category": "leisure",
-        "key": "leisure-amazon"
+        "key": "leisure-amazon",
+        "github": "https://github.com/krssywvr/not-amazon",
+        "site": ""
     },
     {
         "name": "Chain Reactions Blog",
@@ -105,6 +107,8 @@
         ],
         "img": "",
         "category": "leisure",
-        "key": "leisure-chain-reactions"
+        "key": "leisure-chain-reactions",
+        "github": "",
+        "site": ""
     }
 ]

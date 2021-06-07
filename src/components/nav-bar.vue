@@ -1,8 +1,11 @@
 <template>
     <div class="nav-bar-container">
-        <router-link to="/work" class="nav-item">Work</router-link>
-        <router-link to="/leisure" class="nav-item">Leisure</router-link>
-        <router-link to="/" class="nav-item">connect</router-link>
+        <!-- <rouer-link to="/" class="home-logo yeseva-one-heading">kw</rouer-link> -->
+        <div>
+            <router-link to="/work" class="nav-item">Work</router-link>
+            <router-link to="/leisure" class="nav-item">Leisure</router-link>
+            <router-link to="/connect" class="nav-item">connect</router-link>
+        </div>
     </div>
 </template>
 
@@ -19,7 +22,7 @@ a {
 
 .nav-bar-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .nav-item {

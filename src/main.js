@@ -5,6 +5,7 @@ import App from './App.vue';
 // Routes
 import Home from './components/home.vue';
 import ProjectsContainer from './components/pages/projects-container.vue';
+import Connect from './components/pages/connect.vue';
 
 const routes = [{
         path: '/',
@@ -20,6 +21,11 @@ const routes = [{
         path: '/leisure',
         name: 'leisure',
         component: ProjectsContainer
+    },
+    {
+        path: '/connect',
+        name: 'connect',
+        component: Connect
     }
 ];
 
