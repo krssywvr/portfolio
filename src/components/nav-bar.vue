@@ -1,8 +1,8 @@
 <template>
     <div class="nav-bar-container">
         <router-link to="/work" class="nav-item">Work</router-link>
-        <router-link to="/fun" class="nav-item">Just for fun</router-link>
-        <router-link to="/" class="nav-item">let's chat</router-link>
+        <router-link to="/leisure" class="nav-item">Leisure</router-link>
+        <router-link to="/" class="nav-item">connect</router-link>
     </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+  padding: 10px;
+}
+
 .nav-bar-container {
     display: flex;
     justify-content: flex-end;

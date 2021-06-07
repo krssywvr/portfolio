@@ -2,9 +2,20 @@
     <div class="project-container">
         <section class="project-details">
             <h2 class="project-name roboto-sub-heading">{{ project.name }}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum obcaecati fuga cumque a sit impedit natus, est facilis expedita, dolore possimus voluptas dolorum consequuntur assumenda consectetur ut porro quisquam?</p>
+            <p class="project-desc">{{ project.desc }}</p>
+            <a v-if="project.article" target="_blank" :href="project.article">Release Article</a>
+            <p class="project-tech-stack-header">Technologies Used: <span class="roboto-italic">{{ techStack }}</span></p>
+            <!-- <ul v-if="project.techStack" class="project-tech-stack-container">
+                <li v-for="tech in project.techStack"
+                    :key="tech"
+                    class="prject-tech">
+                    {{ tech }},
+                </li>
+            </ul> -->
         </section>
-        <div class="img-preview"></div>
+        <img v-if="project.img"
+            class="img-preview"
+            :src="require(`@/assets/${project.img}`)"/>
     </div>
 </template>
 
@@ -17,11 +28,14 @@ export default {
             switch (this.$route.name) {
             case 'work':
                 return 'work';
-            case 'fun':
-                return 'just for fun';
+            case 'leisure':
+                return 'leisure';
             default:
                 return ''
             }
+        },
+        techStack () {
+            return this.project.techStack.join(', ')
         }
     },
     created () {
@@ -43,10 +57,13 @@ export default {
     flex-direction: column;
 }
 
+p {
+    margin-bottom: 0px;
+}
+
 .img-preview {
-    background-color: cornflowerblue;
     margin-left: 10px;
-    width: 2000px;
-    height: 250px;
+    width: 400px;
+    object-fit: contain;
 }
 </style>

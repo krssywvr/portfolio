@@ -7,7 +7,7 @@
             "HighCharts",
             "Jasmine/Karma"
         ],
-        "img": "../assets/trends.jpeg",
+        "img": "trends.png",
         "category": "work",
         "key": "work-trends"
     },
@@ -21,7 +21,7 @@
             "Jest",
             "Cypress"
         ],
-        "img": "",
+        "img": "designer.png",
         "category": "work",
         "key": "work-vds",
         "article": "https://www.pendo.io/pendo-blog/introducing-pendo-visual-design-studio-bringing-power-app-guides-everyone/"
@@ -36,14 +36,14 @@
             "Jest",
             "Cypress"
         ],
-        "img": "",
+        "img": "webhooks.png",
         "category": "work",
         "key": "work-webhooks",
         "article": "https://www.pendo.io/pendo-blog/using-webhooks-to-drive-product-led-workflows-across-your-organization/"
     },
     {
         "name": "Salesforce Integration Vue Migration @ Pendo",
-        "desc": "Set-up full end-to-end testing with Cypress for Pendo's existing Salesforce Integration as a way to leviate an increase in customer-found bugs. Later completely migrated and redesigned the existing integration, which was written with AngularJS, to use Vue/Vuex. (Hackathon winner 2020)",
+        "desc": "Set-up full end-to-end testing with Cypress for Pendo's existing Salesforce Integration as a way to leviate an increase in customer-found bugs. Later, completely migrated and redesigned the existing integration, which was written with AngularJS, to use Vue/Vuex. (Hackathon winner 2020)",
         "techStack": [
             "JavaScript",
             "Vue",
@@ -53,7 +53,8 @@
         ],
         "img": "",
         "category": "work",
-        "key": "work-sfdc"
+        "key": "work-sfdc",
+        "article": "https://www.pendo.io/integrations/salesforce/"
     },
     {
         "name": "Hubspot Integration @ Pendo",
@@ -65,24 +66,37 @@
             "Jest",
             "Cypress"
         ],
-        "img": "",
+        "img": "hubspot.png",
         "category": "work",
-        "key": "work-hubspot"
+        "key": "work-hubspot",
+        "article": "https://www.pendo.io/integrations/hubspot/"
     },
     {
         "name": "Resource Center Chat Extensions @ Pendo",
-        "desc": "blah blah blah",
+        "desc": "Enable 3rd-party chat providers to be installed and work seamlessly as a part of Pendo's Resource Center.",
         "techStack": [
             "JavaScript",
             "AngularJS"
         ],
-        "img": "",
+        "img": "rc-chats.png",
         "category": "work",
         "key": "work-rc-chats"
     },
     {
+        "name": "Full-Stack Amazon Clone",
+        "desc": "Amazon copy as a way to learn React and MongoDB. ",
+        "techStack": [
+            "JavaScript",
+            "React",
+            "Firebase"
+        ],
+        "img": "amazon.png",
+        "category": "leisure",
+        "key": "leisure-amazon"
+    },
+    {
         "name": "Chain Reactions Blog",
-        "desc": "A blog and blogging platform. Remember when Chain Restraunts ruled the world? Join my friends and I as we revist some of our old favorites, sometimes tasting sweet nostalgia, other times realizing why chains took a hit.",
+        "desc": "A blog and blogging platform. Remember when Chain Restraunts ruled the world? Join my friends and I as we revist some of our old favorites, sometimes tasting sweet nostalgia, other times realizing why chains are becoming extinct",
         "techStack": [
             "JavaScript",
             "React",
@@ -90,18 +104,7 @@
             "NodeJS"
         ],
         "img": "",
-        "category": "fun",
-        "key": "fun-chain-reactions"
-    },
-    {
-        "name": "Twitter Clone",
-        "desc": "A Twitter copy as a way to re-learn React",
-        "techStack": [
-            "JavaScript",
-            "React"
-        ],
-        "img": "",
-        "category": "fun",
-        "key": "fun-twitter"
+        "category": "leisure",
+        "key": "leisure-chain-reactions"
     }
 ]

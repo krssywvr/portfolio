@@ -28,9 +28,14 @@ body {
   margin: 40px;
 }
 
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
-  padding: 10px;
   color: #666666;
 }
 a:hover {
@@ -53,6 +58,12 @@ a:hover {
 
 .roboto-sub-heading {
     font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.roboto-italic {
     font-style: italic;
     font-weight: 100;
     margin: 0px;

@@ -17,8 +17,8 @@ const routes = [{
         component: ProjectsContainer
     },
     {
-        path: '/fun',
-        name: 'fun',
+        path: '/leisure',
+        name: 'leisure',
         component: ProjectsContainer
     }
 ];
