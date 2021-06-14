@@ -60,6 +60,6 @@ export default {
 
 <style scoped>
 .page-name {
-    font-size: 5em;
+    font-size: 5vw;
 }
 </style>

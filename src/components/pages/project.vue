@@ -3,15 +3,20 @@
         <section class="project-details">
             <h2 class="project-name roboto-sub-heading">{{ project.name }}</h2>
             <p class="project-desc">{{ project.desc }}</p>
-            <a v-if="project.article" target="_blank" :href="project.article">Release Article</a>
-            <p class="project-tech-stack-header">Technologies Used: <span class="roboto-italic">{{ techStack }}</span></p>
-            <!-- <ul v-if="project.techStack" class="project-tech-stack-container">
-                <li v-for="tech in project.techStack"
-                    :key="tech"
-                    class="prject-tech">
-                    {{ tech }},
-                </li>
-            </ul> -->
+            <div>
+                <p class="project-tech-stack-header">Technologies Used: <span class=""><small>{{ techStack }}</small></span></p>
+                <a v-if="project.article" target="_blank" :href="project.article">
+                    Release Article
+                </a>
+                <div class="project-sources">
+                    <a v-if="project.site" target="_blank" :href="project.site">
+                        {{ project.site }}
+                    </a>                    
+                    <a v-if="project.github" target="_blank" :href="project.github">
+                        github logo
+                    </a>
+                </div>
+            </div>
         </section>
         <img v-if="project.img"
             class="img-preview"
@@ -45,11 +50,37 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 900px) {
+    .project-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .project-name.roboto-sub-heading {
+        /* font-size: 3vw; */
+    }
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-desc {
+        text-align: justify;
+    }
+
+    .img-preview {
+        width: 100% !important;
+        object-fit: contain;
+        margin: 0 0 10px 0;
+    }
+}
+
 .project-container {
     display: flex;
     border-bottom: 1px solid #f0c884;
-    padding: 20px;
-    margin: 0px 40px;
+    padding: 20px 0px;
 }
 
 .project-details {
@@ -57,13 +88,9 @@ export default {
     flex-direction: column;
 }
 
-p {
-    margin-bottom: 0px;
-}
-
 .img-preview {
     margin-left: 10px;
-    width: 400px;
+    width: 60%;
     object-fit: contain;
 }
 </style>

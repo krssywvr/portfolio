@@ -21,11 +21,10 @@ export default {
 
 body {
   height: 100vh;
-  background-color: #afaaff;
   background-image: linear-gradient(to bottom right, #afaaff, #fcb02b);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 40px;
+  margin: 0 40px;
 }
 
 ul {
@@ -57,7 +56,6 @@ a:hover {
 }
 
 .roboto-sub-heading {
-    font-size: 2em;
     font-style: italic;
     font-weight: 100;
     margin: 0px;
