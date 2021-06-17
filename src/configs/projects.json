@@ -88,13 +88,14 @@
         "techStack": [
             "JavaScript",
             "React",
-            "Firebase"
+            "Firebase",
+            "Stripe"
         ],
         "img": "amazon.png",
         "category": "leisure",
         "key": "leisure-amazon",
         "github": "https://github.com/krssywvr/not-amazon",
-        "site": "definitely-not-amazon.firebase.appspot.com"
+        "site": "https://definitely-not-87494.web.app/"
     },
     {
         "name": "Chain Reactions Blog",

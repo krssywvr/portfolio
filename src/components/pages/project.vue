@@ -56,10 +56,6 @@ export default {
         flex-direction: column-reverse;
     }
 
-    .project-name.roboto-sub-heading {
-        /* font-size: 3vw; */
-    }
-
     .project-details {
         display: flex;
         flex-direction: column;
