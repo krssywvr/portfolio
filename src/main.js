@@ -1,11 +1,12 @@
 import { createApp } from 'vue';
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
+import mdiVue from 'mdi-vue/v3'
+import * as mdijs from '@mdi/js'
 import App from './App.vue';
 
 // Routes
 import Home from './components/home.vue';
 import ProjectsContainer from './components/pages/projects-container.vue';
-import Connect from './components/pages/connect.vue';
 
 const routes = [{
         path: '/',
@@ -21,18 +22,19 @@ const routes = [{
         path: '/leisure',
         name: 'leisure',
         component: ProjectsContainer
-    },
-    {
-        path: '/connect',
-        name: 'connect',
-        component: Connect
     }
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
+    base: process.env.BASE_URL,
     routes
 });
 
 // const app = createApp(App);
-createApp(App).use(router).mount('#app');
+createApp(App)
+    .use(router)
+    .use(mdiVue, {
+        icons: mdijs
+    })
+    .mount('#app');

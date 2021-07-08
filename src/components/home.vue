@@ -4,20 +4,13 @@
     <h1 class="name yeseva-one-heading">Kristine <span>Weaver</span></h1>
     <h3 class="title">front-end software engineer</h3>
   </div>
-  <div>
-    <!-- <connect /> -->
-  </div>
   </section>
 </template>
 
 <script>
-// import Connect from './pages/connect.vue';
 
 export default {
   name: 'Home',
-  components: {
-    // Connect
-  },
   props: {
     msg: String
   }

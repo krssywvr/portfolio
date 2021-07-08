@@ -1,16 +1,21 @@
 <template>
   <NavBar />
   <router-view></router-view>
+  <footer>
+    <connect />
+  </footer>
 </template>
 
 <script>
 import NavBar from './components/nav-bar.vue';
+import Connect from './components/pages/connect.vue';
 // #f7ccff
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Connect
   }
 }
 </script>
@@ -27,6 +32,10 @@ body {
   margin: 0 40px;
 }
 
+p {
+  color: #666666;
+}
+
 ul {
   list-style: none;
   padding: 0px;
@@ -35,10 +44,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: #666666;
+  color: #e9e5dd;
 }
 a:hover {
   color: #f0c884;
+}
+
+footer {
+  padding: 20px 0px;
 }
 
 #app {

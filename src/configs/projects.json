@@ -84,7 +84,7 @@
     },
     {
         "name": "Full-Stack Amazon Clone",
-        "desc": "Amazon copy as a way to re-learn React and MongoDB. This project mirrors core Amazon functionality including authentication, product database, front-end state management (adding + removing items from cart), and secure checkout with Stripe",
+        "desc": "(IN PROGRESS) Amazon copy as a way to re-learn React. This project mirrors core Amazon functionality including authentication, product database, front-end state management (adding + removing items from cart), and secure checkout with Stripe",
         "techStack": [
             "JavaScript",
             "React",
@@ -98,17 +98,16 @@
         "site": "https://definitely-not-87494.web.app/"
     },
     {
-        "name": "Chain Reactions Blog",
-        "desc": "A blog and blogging platform. Remember when Chain Restraunts ruled the world? Join my friends and I as we revist some of our old favorites, sometimes tasting sweet nostalgia, other times realizing why chains are becoming extinct",
+        "name": "WeView",
+        "desc": "(IN PROGRESS) Enable users to share what their household is currently streaming and rank what they have already watched",
         "techStack": [
             "JavaScript",
             "React",
-            "TypeScript",
-            "NodeJS"
+            "Next.js"
         ],
         "img": "",
         "category": "leisure",
-        "key": "leisure-chain-reactions",
+        "key": "leisure-weview",
         "github": "",
         "site": ""
     }

@@ -1,25 +1,53 @@
 <template>
     <section class="connect">
-        <h2 class="page-name yeseva-one-heading">Let's Connect</h2>
-        <p>
-            Thanks for stopping by! I'm Kristine, Software Engineer and lover of all things front-end. 
-            The past few years I've been working exclusivly with Vue and as of late, I've been expanding my 
-            skill set to include React and TypeScript. My favorite thing about software development is that you 
-            are never done learning. When not stationed in front of my computer, I'm continuously trying to strike the perfect 
-            balance between hitting the pliates studio and indulging in a tastey meal or cold cocktail. 
-            Other hobbies include DIY projects, hiking, baking and photoshoots with my cat and dog. 
-        </p>
+        <div class="connect-container">
+            <div class="connect-icons">
+                <a target="_blank" title="github" href="https://github.com/krssywvr">
+                    <mdicon name="github" size="2rem" />
+                </a>
+                <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/kristineerickson11/">
+                    <mdicon name="linkedin" size="2rem" />
+                </a> 
+                <a target="_blank"
+                    title="Download Resume"
+                    :href="`${publicPath}kristine-weaver-resume-2021.pdf`"
+                    download>
+                    <mdicon name="file-download-outline" size="2rem" />
+                </a>
+            </div>
+        </div>
     </section>
 </template>
 
 <script>
+// import Resume from '../../../public/kristine-weaver-resume-2021.pdf';
 export default {
-    name: 'Connect'
+    name: 'Connect',
+    data () {
+        return {
+            publicPath: process.env.BASE_URL
+        }
+    }
 }
 </script>
 
 <style scoped>
-.page-name {
-    font-size: 5vw;
+@media screen and (max-width: 900px) {
+    .connect-icons {
+        justify-content: center !important;
+    }
+}
+
+.connect-container {
+    max-width: 1000;
+}
+
+.connect-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.connect-icons a:not(:first-child) {
+    margin-left: 5px;
 }
 </style>

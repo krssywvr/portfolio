@@ -51,9 +51,6 @@ export default {
         leisureProjects () {
             return projects.default.filter(project => project.category === 'leisure');
         }
-    },
-    created () {
-        console.log('projects', this.$route, this.workProjects);
     }
 }
 </script>

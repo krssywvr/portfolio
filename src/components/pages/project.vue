@@ -5,15 +5,27 @@
             <p class="project-desc">{{ project.desc }}</p>
             <div>
                 <p class="project-tech-stack-header">Technologies Used: <span class=""><small>{{ techStack }}</small></span></p>
-                <a v-if="project.article" target="_blank" :href="project.article">
-                    Release Article
-                </a>
                 <div class="project-sources">
-                    <a v-if="project.site" target="_blank" :href="project.site">
-                        {{ project.site }}
-                    </a>                    
-                    <a v-if="project.github" target="_blank" :href="project.github">
-                        github logo
+                    <a v-if="project.article"
+                    class="project-source"
+                    target="_blank"
+                    title="See release article"
+                    :href="project.article">
+                        <mdicon name="book-open-page-variant-outline" />
+                    </a>
+                    <a v-if="project.site"
+                        class="project-source"
+                        target="_blank"
+                        :href="project.site"
+                        title="visit site">
+                        <mdicon name="open-in-new" />
+                    </a>               
+                    <a v-if="project.github"
+                        class="project-source"
+                        target="_blank"
+                        :href="project.github"
+                        title="source code">
+                        <mdicon name="github" />
                     </a>
                 </div>
             </div>
@@ -25,8 +37,11 @@
 </template>
 
 <script>
+
 export default {
     name: 'Project',
+    components: {
+    },
     props: ['project'],
     computed: {
         pageName () {
@@ -42,9 +57,6 @@ export default {
         techStack () {
             return this.project.techStack.join(', ')
         }
-    },
-    created () {
-        console.log('projects', this.$route);
     }
 }
 </script>
@@ -66,10 +78,15 @@ export default {
         text-align: justify;
     }
 
+    .project-sources {
+        display: flex;
+        justify-content: center;
+    }
+
     .img-preview {
         width: 100% !important;
         object-fit: contain;
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 0 !important;
     }
 }
 
@@ -88,5 +105,9 @@ export default {
     margin-left: 10px;
     width: 60%;
     object-fit: contain;
+}
+
+.project-source {
+    padding-right: 10px;
 }
 </style>

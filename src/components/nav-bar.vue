@@ -4,7 +4,6 @@
         <div>
             <router-link to="/work" class="nav-item">Work</router-link>
             <router-link to="/leisure" class="nav-item">Leisure</router-link>
-            <router-link to="/connect" class="nav-item">connect</router-link>
         </div>
     </div>
 </template>
