@@ -7,10 +7,9 @@
                 :key="project.key"
                 :project="project" />
         </section>
-        <section class="page-content" v-if="isFunPage">
-            <p class="roboto-sub-heading">coming soon</p>
+        <section class="page-content" v-if="isLeisurePage">
             <project
-                v-for="project in funProjects"
+                v-for="project in leisureProjects"
                 :key="project.key"
                 :project="project" />
         </section>
@@ -33,34 +32,31 @@ export default {
         isContactPage () {
             return this.$route.name === 'contact';
         },
-        isFunPage () {
-            return this.$route.name === 'fun';
+        isLeisurePage () {
+            return this.$route.name === 'leisure';
         },
         pageName () {
             switch (this.$route.name) {
             case 'work':
                 return 'work';
-            case 'fun':
-                return 'just for fun';
+            case 'leisure':
+                return 'leisure';
             default:
                 return ''
             }
         },
         workProjects () {
-            return projects.default.filter(project => project.category === 'work');
+            return projects.default.filter(project => project.category === 'work').reverse();
         },
-        funProjects () {
-            return projects.default.filter(project => project.category === 'fun');
+        leisureProjects () {
+            return projects.default.filter(project => project.category === 'leisure');
         }
-    },
-    created () {
-        console.log('projects', this.$route, this.workProjects);
     }
 }
 </script>
 
 <style scoped>
 .page-name {
-    font-size: 5em;
+    font-size: 5vw;
 }
 </style>

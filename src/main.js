@@ -1,5 +1,7 @@
 import { createApp } from 'vue';
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
+import mdiVue from 'mdi-vue/v3'
+import * as mdijs from '@mdi/js'
 import App from './App.vue';
 
 // Routes
@@ -17,16 +19,22 @@ const routes = [{
         component: ProjectsContainer
     },
     {
-        path: '/fun',
-        name: 'fun',
+        path: '/leisure',
+        name: 'leisure',
         component: ProjectsContainer
     }
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
+    base: process.env.BASE_URL,
     routes
 });
 
 // const app = createApp(App);
-createApp(App).use(router).mount('#app');
+createApp(App)
+    .use(router)
+    .use(mdiVue, {
+        icons: mdijs
+    })
+    .mount('#app');

@@ -1,16 +1,21 @@
 <template>
   <NavBar />
   <router-view></router-view>
+  <footer>
+    <connect />
+  </footer>
 </template>
 
 <script>
 import NavBar from './components/nav-bar.vue';
+import Connect from './components/pages/connect.vue';
 // #f7ccff
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Connect
   }
 }
 </script>
@@ -21,20 +26,32 @@ export default {
 
 body {
   height: 100vh;
-  background-color: #afaaff;
   background-image: linear-gradient(to bottom right, #afaaff, #fcb02b);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 40px;
+  margin: 0 40px;
+}
+
+p {
+  color: #666666;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
   text-decoration: none;
-  padding: 10px;
-  color: #666666;
+  color: #e9e5dd;
 }
 a:hover {
   color: #f0c884;
+}
+
+footer {
+  padding: 20px 0px;
 }
 
 #app {
@@ -52,7 +69,12 @@ a:hover {
 }
 
 .roboto-sub-heading {
-    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.roboto-italic {
     font-style: italic;
     font-weight: 100;
     margin: 0px;
